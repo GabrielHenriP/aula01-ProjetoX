@@ -22,7 +22,7 @@ function Sair({navigation}){
     <TouchableHighlight 
           onPress={handleSubmit} 
           style={{
-              backgroundColor:'red', 
+              backgroundColor:'#80bdb7', 
               marginTop: 30, 
               alignItems:'center',
               justifyContent:'center',
