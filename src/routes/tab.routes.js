@@ -5,6 +5,7 @@ import { CommonActions } from '@react-navigation/native';
 
 import Brasil from '../pages/Brasil';
 import EUA from '../pages/EUA';
+import Home from '../pages/Home';
 
 
 function Sair({navigation}){
@@ -46,6 +47,7 @@ export default function Tabs() {
     <Tab.Navigator initialRouteName="Init">
     <Tab.Screen name="Brasil" component={Brasil} />
     <Tab.Screen name="EUA" component={EUA} />
+    <Tab.Screen name="Home" component={Home} />
     <Tab.Screen name="Sair" component={Sair} />
     </Tab.Navigator>
     

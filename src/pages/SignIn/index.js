@@ -9,7 +9,7 @@ export default function SignIn({navigation}) {
     const [text, setText] = useState('');
 
     function handleSubmit(){
-        api.get(`users/${text}`)
+        /*api.get(`users/${text}`)
         .then((response) => {
             if( response.data.node_id === "MDQ6VXNlcjYyMTE2OTg4"){
                 //flag = 1;
@@ -24,7 +24,14 @@ export default function SignIn({navigation}) {
         })
         .catch((err) => {
             console.log("ops! ocorreu um erro" + err);
-        });
+        });*/
+        navigation.dispatch(
+            CommonActions.reset({
+                index:1,
+                routes: [{name: 'Tabs'}],
+            })
+        )
+
     }
     
     
